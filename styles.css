@@ -4,3 +4,19 @@
   --color-text: #000000;
   --color-background: #ffffff;
 }
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  width: 30%;
+  background-color: var(--color-primary);
+}
+
+.logo {
+  margin: 12%;
+}
