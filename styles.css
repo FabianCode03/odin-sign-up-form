@@ -1,9 +1,18 @@
+@font-face {
+  font-family: "rwu";
+  src: url(/assets/fonts/BarlowSemiCondensed-Medium.ttf);
+}
+
 :root {
   --color-primary: #6638b6;
   --color-secondary: #00a9ce;
   --color-text: #000000;
   --color-background: #ffffff;
   --color-background-2: #f0ecf1;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -33,6 +42,14 @@ main > * {
 .welcome-text-section {
   background-color: var(--color-background-2);
   height: 30%;
+
+  font-size: x-large;
+  font-family: "rwu";
+  font-weight: bold;
+  color: var(--color-primary);
+
+  padding: 30px;
+  padding-top: 70px;
 }
 
 .form-section {
