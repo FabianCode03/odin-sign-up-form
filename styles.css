@@ -16,15 +16,26 @@
 }
 
 body {
-  display: flex;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 35% 30% 35%;
+  grid-template-areas:
+    "aside welcome-message"
+    "aside form"
+    "aside call-to-action";
   height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "rwu";
 }
 
+main {
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
 aside {
-  width: 30%;
+  grid-area: aside;
   background-color: var(--color-primary);
 }
 
@@ -32,18 +43,13 @@ aside {
   margin: 12%;
 }
 
-main {
-  width: 70%;
-}
-
-main > * {
-  width: 100%;
+section {
   padding: 30px;
 }
 
 .welcome-text-section {
   background-color: var(--color-background-2);
-  height: 35%;
+  grid-area: welcome-message;
 
   font-size: x-large;
   font-weight: bold;
@@ -54,24 +60,13 @@ main > * {
 
 .form-section {
   background-color: var(--color-background);
-  height: 30%;
+  grid-area: form;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 1;
 }
 
 .call-to-action-section {
   background-color: var(--color-background-2);
-  height: 35%;
-  z-index: 0;
-}
-
-form {
-  height: 100%;
-}
-
-fieldset {
-  height: 100%;
+  grid-area: call-to-action;
 }
 
 .grid-wrapper {
