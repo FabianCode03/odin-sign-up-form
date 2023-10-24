@@ -24,19 +24,28 @@
           <legend>JOIN OUR GREAT UNIVERSITY!</legend>
           <div class="grid-wrapper">
             <div class="form-row">
-              <label for="first_name">FIRST NAME</label
-              ><input type="text" id="first_name" placeholder="max" />
+              <label for="first_name"
+                >FIRST NAME <span aria-label="required">*</span></label
+              ><input type="text" id="first_name" placeholder="max" required />
             </div>
             <div class="form-row">
-              <label for="last_name">LAST NAME</label
-              ><input type="text" id="last_name" placeholder="mustermann" />
+              <label for="last_name"
+                >LAST NAME <span aria-label="required">*</span></label
+              ><input
+                type="text"
+                id="last_name"
+                placeholder="mustermann"
+                required
+              />
             </div>
             <div class="form-row">
-              <label for="email">EMAIL</label
+              <label for="email"
+                >EMAIL <span aria-label="required">*</span></label
               ><input
                 type="email"
                 id="email"
                 placeholder="max.mustermann@mail.de"
+                required
               />
             </div>
             <div class="form-row">
@@ -48,12 +57,14 @@
               />
             </div>
             <div class="form-row">
-              <label for="password">PASSWORD</label
-              ><input type="password" id="password" />
+              <label for="password"
+                >PASSWORD <span aria-label="required">*</span></label
+              ><input type="password" id="password" required />
             </div>
             <div class="form-row">
-              <label for="confirm_password">CONFIRM PASSWORD</label
-              ><input type="password" id="confirm_password" />
+              <label for="confirm_password"
+                >CONFIRM PASSWORD <span aria-label="required">*</span></label
+              ><input type="password" id="confirm_password" required />
             </div>
           </div>
         </fieldset>
