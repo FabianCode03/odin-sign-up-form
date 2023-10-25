@@ -6,6 +6,7 @@
 :root {
   --color-primary: #6638b6;
   --color-secondary: #007da7;
+  --color-secondary-light: #05c3de;
   --color-secondary-hover: #006a8e;
   --color-text: #000000;
   --color-background: #ffffff;
@@ -116,7 +117,7 @@ input {
 }
 
 input:focus {
-  outline-color: var(--color-secondary);
+  outline-color: var(--color-secondary-light);
 }
 
 input:not(:placeholder-shown):invalid[placeholder] {
