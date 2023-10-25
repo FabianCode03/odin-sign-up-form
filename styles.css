@@ -114,3 +114,11 @@ input {
 input:focus {
   outline-color: var(--color-secondary);
 }
+
+input:not(:placeholder-shown):invalid[placeholder] {
+  border: 2px solid red;
+}
+
+input:not(:placeholder-shown):valid[placeholder] {
+  border: 2px solid green;
+}
