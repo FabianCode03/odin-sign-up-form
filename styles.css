@@ -6,6 +6,7 @@
 :root {
   --color-primary: #6638b6;
   --color-secondary: #007da7;
+  --color-secondary-hover: #006a8e;
   --color-text: #000000;
   --color-background: #ffffff;
   --color-background-2: #f0ecf1;
@@ -135,4 +136,8 @@ input:not(:placeholder-shown):valid[placeholder] {
   font-family: inherit;
   font-size: large;
   font-weight: 600;
+}
+
+.sign-up-btn:hover {
+  background-color: var(--color-secondary-hover);
 }
