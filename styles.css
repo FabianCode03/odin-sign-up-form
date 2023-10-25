@@ -142,3 +142,13 @@ input:not(:placeholder-shown):valid[placeholder] {
 .sign-up-btn:hover {
   background-color: var(--color-secondary-hover);
 }
+
+a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--color-secondary-hover);
+}
