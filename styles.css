@@ -130,12 +130,17 @@ input:focus {
   outline-color: var(--color-secondary-light);
 }
 
-input:not(:placeholder-shown):invalid[placeholder] {
+input:not(:placeholder-shown):invalid {
   border: 2px solid red;
 }
 
-input:not(:placeholder-shown):valid[placeholder] {
+input:not(:placeholder-shown):valid {
   border: 2px solid green;
+}
+
+.password-hint {
+  margin: 0;
+  font-size: small;
 }
 
 .sign-up-btn {
