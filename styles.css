@@ -58,6 +58,16 @@ section {
   color: var(--color-primary);
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-bottom p {
+  margin: 0;
+}
+
 h2 {
   font-size: x-large;
 }
